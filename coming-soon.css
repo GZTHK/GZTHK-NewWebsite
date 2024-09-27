@@ -1,0 +1,77 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    text-align: center;
+}
+img {
+    width: 300px;
+    height: 200px;
+}
+p {
+    text-align: center;
+}
+.csH1 {
+    margin-top: -1%;
+    font-size: 80px;
+}
+.csH2 {
+    margin-top: -60px;
+    font-size: 18px;
+}
+form {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+#input {
+    padding: 10px 200px 10px 10px;
+    margin: 0 15px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    transition-duration: 0.5s;
+}
+#input:hover {
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+#input:focus {
+    outline: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+.button {
+    border: 1px solid rgb(0, 0, 255);
+    padding: 10px 30px;
+    background-color: rgb(0, 0, 255);
+    color: rgb(255, 255, 255);
+    transition-duration: 0.5s;
+}
+.button:hover {
+    border: 1px solid rgb(0, 0, 255);
+    color: rgb(0, 0, 255);
+    background-color: rgb(255, 255, 255);
+}
+.button:active {
+    transform: scale(95%);
+}
+a {
+    position: relative;
+    top: 120px;
+    text-align: center;
+    padding: 15px 120px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    transition-duration: 0.5s;
+}
+a:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+a:active {
+    transform: scale(95%);
+}

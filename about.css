@@ -1,0 +1,282 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+header {
+    margin-top: 20px;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    padding-bottom: 45px;
+}
+.title-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.title-logo img {
+    margin-top: 60px;
+    margin-right: 60px;
+    width: 342px;
+    height: 210px;
+    object-fit: cover;
+}
+.title-logo .sitename {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 70px;
+    width: fit-content;
+}
+.title-logo .sitename p {
+    margin-bottom: -60px;
+}
+header .title2 {
+    text-align: center;
+    font-size: 26px;
+}
+nav {
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgba(174, 98, 63, 0.4);
+    padding: 10px;
+}
+nav a {
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: rgba(0,0,0,0);
+    border: 1px solid rgba(0,0,0,0);
+    width: fit-content;
+    padding: 10px 30px;
+    margin-left: 10px;
+    transition-duration: 0.5s;
+
+}
+nav :nth-child(2) {
+    background-color: rgb(174, 99, 63);
+    color: rgb(255, 255, 255);
+}
+nav a:hover {
+    background-color: rgb(174, 99, 63);
+    color: rgb(255, 255, 255);
+}
+nav a:active {
+    transform: scale(95%);
+}
+#about-us {
+    margin: 30px auto;
+    width: 900px;
+    text-align: left;
+    color: rgb(117, 117, 117);
+}
+#about-us .about-us-title {
+    color: rgb(0, 0, 0);
+    font-size: 56px;
+
+}
+#about-us p a {
+    text-decoration: none;
+    color: rgb(117, 117, 117);
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+#about-us p a:hover {
+    color: rgb(174, 99, 63);
+}
+#about-us img {
+   position: relative;
+   left: 40%;
+}
+#team {
+    color: rgb(117, 117, 117);
+    background-color: rgb(232, 230, 230);
+    text-align: center;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+#team .teamH1 {
+    color: rgb(0, 0, 0);
+    padding-top: 30px;
+    font-size: 56px;
+    text-align: left;
+    margin-left: 17%;
+
+}
+#team .teamH2 {
+    margin-left: 17%;
+    margin-top: -50px;
+    text-align: left;
+}
+#team .teamH3 {
+    color: rgb(0, 0, 0);
+    font-size: 26px;
+}
+#team ul {
+    margin-top: -20px;
+    list-style-type: none;
+    font-size: 14px;
+}
+#team ul li a {
+    text-decoration: none;
+    color: rgb(117, 117, 117);
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+#team ul li a:hover {
+    color: rgb(174, 99, 63);
+}
+#team h4 {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+#team .postscr {
+    font-size: 12px;
+    margin-top: -20px;
+    padding-bottom: 25px;
+}
+#team .pslink {
+    text-decoration: none;
+    color: rgb(117, 117, 117);
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+#team .pslink:hover {
+    color: rgb(165, 101, 4);
+}
+footer {
+    font-size: 12px;
+    text-align: center;
+    padding: 50px 0 10px;
+}
+footer p {
+    margin-bottom: -10px;
+}
+footer a {
+    color: rgb(109, 23, 23);
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+footer a:hover {
+    color: rgb(165, 101, 4);
+}
+.telegram-button {
+    position: fixed;
+    right: 13px;
+    bottom: 10px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 53px;
+    font-size: 35px;
+    z-index: 9999;
+}
+.telegram-button a {
+    color: rgb(255, 255, 255);
+}
+.telegram-button img {
+    width: 55px;
+    height: 55px;
+    margin-right: 5px;
+}
+.telegram-button:before,
+.telegram-button:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    border: 50%;
+    border: 1px solid rgb(0, 170, 255);
+    left: -20px;
+    right: -20px;
+    top: -20px;
+    bottom: -20px;
+    border-radius: 50%;
+    animation: animate 1.5s linear infinite;
+    opacity: 0;
+    backface-visibility: hidden; 
+}
+ 
+.telegram-button:after{
+    animation-delay: .5s;
+}
+ 
+@keyframes animate
+{
+    0%
+    {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+.rumine-button {
+    position: fixed;
+    right: 13px;
+    bottom: 120px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    background-color: rgb(196, 130, 32);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 53px;
+    font-size: 35px;
+    z-index: 9999;
+}
+.rumine-button a {
+    color: rgb(255, 255, 255);
+}
+.rumine-button img {
+    width: 45px;
+    height: 45px;
+    margin-top: 5px;
+}
+.rumine-button:before,
+.rumine-button:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    border: 50%;
+    border: 1px solid rgb(196, 130, 32);
+    left: -20px;
+    right: -20px;
+    top: -20px;
+    bottom: -20px;
+    border-radius: 50%;
+    animation: animate 1.5s linear infinite;
+    opacity: 0;
+    backface-visibility: hidden; 
+}
+ 
+.rumine-button:after{
+    animation-delay: .5s;
+}
+ 
+@keyframes animate
+{
+    0%
+    {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}

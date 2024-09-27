@@ -1,0 +1,61 @@
+html {
+    font-family: comic sans ms,comic-sans-w01-regular,comic-sans-w02-regular,comic-sans-w10-regular,cursive;
+}
+body {
+    background-image: url(media/404-bg.jpg);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-color: rgb(0, 0, 0);
+}
+.err-window {
+    margin: 15% auto;
+    width: 800px;
+    height: 400px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+img {
+    margin-top: 30px;
+    width: 65%;
+    height: 80%;
+}
+.err-text {
+    text-align: center;
+}
+.err-text h1 {
+    margin-top: 30px;
+    font-size: 48px;
+}
+.err-text h3 {
+    font-size: 26px;
+    margin-top: -30px;
+}
+.err-text p {
+    font-size: 24px;
+    text-align: justify;
+    margin-right: 70px;
+    margin-bottom: 40px;
+}
+.err-text a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 50px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    transition-duration: 0.5s;
+}
+.err-text a:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+.err-text a:active {
+    transform: scale(95%);
+}
+@media (max-width: 1366px) and (max-height: 768px) {
+    .err-window {
+        margin: 5% auto;
+    }
+}
